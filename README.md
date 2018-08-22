@@ -1,6 +1,10 @@
 # Q1-Frontend-Project
 Q1 Frontend Project Paper-Rocks-Scissors
 
-I intend to create a Paper - Rock - Scissors game that allows a player to play against the computer and upload their own titles and images to represent the 3 game choices in their own personalized way.
+I intend to create a Paper - Rock - Scissors game that allows a player to play against the computer and annouces the winner of the game.
 
-The game will identify which player won a round and as a stretch goal will also keep score for who wins best 2 out of 3. 
+Stretch Goals:
+
+1. The Game will allow users to upload their own titles and images to represent personalized versions of the game pieces. 
+2. The Game will tell the player who won best 2 out of 3. 
+
