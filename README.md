@@ -1,10 +1,8 @@
-# Q1-Frontend-Project
-Q1 Frontend Project Paper-Rocks-Scissors
+Idea 1
 
-I intend to create a Paper - Rock - Scissors game that allows a player to play against the computer and annouces the winner of the game.
+Create a brain game that tracks users on how well they can answer the question "does this card match the previous card"
+this game would track the users score and have the ability to set time limits. 
 
-Stretch Goals:
+Idea 2
 
-1. The Game will allow users to upload their own titles and images to represent personalized versions of the game pieces. 
-2. The Game will tell the player who won best 2 out of 3. 
-
+create a fitness tracker that allows someone to track which excerises they have done with time durations and other tracking information. 
