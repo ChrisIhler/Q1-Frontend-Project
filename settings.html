@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Settings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class='container1'>
+        <div class='rows'> 
+            
+                <div class='row1'>
+                        <a href="/index.html" id='settingsButton'class='button hover active'>Play</a>
+                </div>
+                <div class='row1'>
+                        <a href="/instructions.html" id='instructionButton'class='button hover active'>Instructions</a>
+                </div>
+                <div class='row1'>
+                        <a href="/settings.html" id='settingsButton'class='button hover active'>Settings</a>
+                </div>
+                <div class='row1'>
+                        <a href="/score.html" id='scoreButton'class='button hover active'>Score</a>
+                </div>
+            
+        </div>
+        <div class='rows' class='row2'>
+            <h2>User Info</h2>
+        </div>
+        <div class='rows' class='row3'>
+        
+            <form>   
+                <input type="text" name="firstname" placeholder="First Name" required>
+                <input type="text" name="lastname" placeholder="Last Name">
+                <input type="email" name="email" placeholder="E-Mail">
+                <input type="phone" name="phone" placeholder="Phone">
+                <input type="text" name="age" placeholder="Age">
+                <input type="submit" value="Submit">
+            </form>    
+        </div>
+        <div class='rows'>
+            <div class='row4'>
+                <h2>Gameplay Settings</h2>
+            </div>
+        </div>
+        <div class='rows'>
+            <form>
+                <h4>Round Limits</h4>
+                    <div>
+                        <label> Free Play:      <input type="radio" name="Free Play"> Yes  
+                                                <input type="radio" name="Free Play" checked>   No</label>            
+                    </div>
+                    <div>
+                        <label>Time            <input type="radio" name="Time">30 Seconds</label>
+                                                <input type="radio" name="Time" checked>1 Minute</label>
+                                                <input type="radio" name="Time">3 Minutes</label>
+                                                <input type="radio" name="Time">5 Minutes</label>
+                                                <input type="radio" name="Time">No Limit</label>
+                                                <!-- <input type="radio" name="Time">Custom Time</label> -->
+                    </div>
+                    <div>
+                        <label>Card Cycles      <input type="radio" name="Card Cycles">10</label>
+                                                <input type="radio" name="Card Cycles">25</label>
+                                                <input type="radio" name="Card Cycles">50</label>
+                                                <input type="radio" name="Card Cycles">100</label>
+                                                <input type="radio" name="Card Cycles" checked>No Limit</label>
+                                                <!-- <input type="radio" name="Card Cycles">Custom Cycles</label> -->
+                    </div>
+                    <div>
+                        <label>Card Matchs      <input type="radio" name="Card Matchs">10</label>
+                                                <input type="radio" name="Card Matchs">25</label>
+                                                <input type="radio" name="Card Matchs">50</label>
+                                                <input type="radio" name="Card Matchs">100</label>
+                                                <input type="radio" name="Card Matchs" checked>No Limit</label>
+                                                <!-- <input type="radio" name="Card Matchs">Custom Matchs</label> -->
+                    </div>
+                    <div>
+                        <h4>Other Settings</h4>
+                    </div>
+                    <div>
+                        <label>Rematch          <input type="radio" name="Rematch">1/2</label>
+                                                <input type="radio" name="Rematch" checked>1/3</label>
+                                                <input type="radio" name="Rematch">1/4</label>
+                                                <input type="radio" name="Rematch">1/5</label>
+                    </div>
+                    <div>
+                        <label>Card Deck Size   <input type="radio" name="Deck Size">3</label>
+                                                <input type="radio" name="Deck Size" checked>5</label>
+                                                <input type="radio" name="Deck Size">10</label>
+                                                <input type="radio" name="Deck Size">20</label>
+                                                <!-- <input type="radio" name="Deck Size">Custom Size</label> -->
+                    </div>
+                    <div>
+                        <label>Match Alert      <input type="radio" name="Alert" checked>On</label>
+                                                <input type="radio" name="Alert">Off</label>
+                    </div>
+                    <div>
+                            <label>Sound        <input type="radio" name="Sound"checked>On</label>
+                                                <input type="radio" name="Sound">Off</label>
+                    </div>
+                
+                
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
