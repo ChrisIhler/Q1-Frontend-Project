@@ -70,7 +70,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
   let gameSetting = JSON.parse(localStorage.getItem('gameSetting'))
   let playerName1 = `${userInfo['First Name']} ${userInfo['Last Name']}`
   console.log('Hi ', playerName1)
-  let gameTime = `${gameSetting['Time']}`
   let cardCycles = `${gameSetting['Card Cycles']}`
   let rematch = `${gameSetting['Rematch']}`
   let cardDeckSize = `${gameSetting['Card Deck Size']}`
