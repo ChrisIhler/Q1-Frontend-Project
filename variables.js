@@ -188,3 +188,9 @@ let perCorrect = numCorrect/cycles *100
 return card
 }
 
+
+
+let oldCard = catCards[0]['card']
+let newCard = catCards[picker]['card']
+
+// oldCard = newcard

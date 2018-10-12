@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
+    <script defer src='score.js'></script>
 </head>
     
     <div class='container1'>
@@ -36,7 +37,7 @@
                 </div>
         </div>
         <div>
-            <table style="width:100%" >
+            <table style="width:100%" id='HighScore' >
                     <tr>
                         <th>#</th>
                         <th>Player Name</th>
@@ -47,335 +48,37 @@
                         <th>Cards Per Second</th>
                         <th>Card Cycles</th>
                         <th>Game Time</th>
-                        <th>Cards Correct Per Second</th>
-                        <th>Cards Correct Per Second</th>
                         <th>Deck Size</th>
                         <th>Rematch</th>
                     </tr>
-                    <tr>
-                        <td>1</td> 
-                        <td>Jfafgfsfdgfsgill</td>
-                        <td>50</td> 
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>2</td> 
-                        <td>Jfafgfsfdgfsgill</td>
-                        <td>50</td> 
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>3</td> 
-                        <td>Jfafgfsfdgfsgill</td>
-                        <td>50</td> 
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>4</td> 
-                        <td>Jfafgfsfdgfsgill</td>
-                        <td>50</td> 
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>5</td> 
-                        <td>Jfafgfsfdgfsgill</td>
-                        <td>50</td> 
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>6</td> 
-                        <td>Jfafgfsfdgfsgill</td>
-                        <td>50</td> 
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>7</td> 
-                        <td>Jfafgfsfdgfsgill</td>
-                        <td>50</td> 
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>8</td> 
-                        <td>Jfafgfsfdgfsgill</td>
-                        <td>50</td> 
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>9</td> 
-                        <td>Jfafgfsfdgfsgill</td>
-                        <td>50</td> 
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>10</td> 
-                        <td>Jfafgfsfdgfsgill</td>
-                        <td>50</td> 
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                    </tr>
+                
                 </table>
             </div>
             <div class='rows'>
                     <div>
-                    Last Scores
+                    Recent Scores
                     </div>
             </div>
             <div>
-                <table style="width:100%" >
+                <table style="width:100%" id='RecentScore'>
                     <tr>
                         <th>#</th>
                         <th>Player Name</th>
-                        <th>Cards Correct Per Minute</th> 
-                        <th>Cards Correct Per Second</th>
-                        <th>Cards % Correct</th>
-                        <th>Cards Per Minute</th>
-                        <th>Cards Per Second</th>
-                        <th>Card Cycles</th>
+                        <th>Cards Correct % Minute </th> 
+                        <th>Cards Correct % Second</th>
+                        <th>Cards Correct %</th>
+                        <th>Cards Correct # Minute</th>
+                        <th>Cards Correct # Second</th>
+                        <th>Cards # Minute</th>
+                        <th>Cards # Second</th>
                         <th>Game Time</th>
-                        <th>Cards Correct Per Second</th>
-                        <th>Cards Correct Per Second</th>
+                        <th>Card Cycles</th>
                         <th>Deck Size</th>
                         <th>Rematch</th>
                     </tr>
-                    <tr>
-                        <td>1</td> 
-                        <td>Jfafgfsfdgfsgill</td>
-                        <td>50</td> 
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>2</td> 
-                        <td>Jfafgfsfdgfsgill</td>
-                        <td>50</td> 
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>3</td> 
-                        <td>Jfafgfsfdgfsgill</td>
-                        <td>50</td> 
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>4</td> 
-                        <td>Jfafgfsfdgfsgill</td>
-                        <td>50</td> 
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>5</td> 
-                        <td>Jfafgfsfdgfsgill</td>
-                        <td>50</td> 
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>6</td> 
-                        <td>Jfafgfsfdgfsgill</td>
-                        <td>50</td> 
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>7</td> 
-                        <td>Jfafgfsfdgfsgill</td>
-                        <td>50</td> 
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>8</td> 
-                        <td>Jfafgfsfdgfsgill</td>
-                        <td>50</td> 
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>9</td> 
-                        <td>Jfafgfsfdgfsgill</td>
-                        <td>50</td> 
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>10</td> 
-                        <td>Jfafgfsfdgfsgill</td>
-                        <td>50</td> 
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                    </tr>
+                    <tbody id="rScoreBody">
+                        
+                    </tbody>
                 </table>
             </div>
 

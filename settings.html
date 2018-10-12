@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
+    <script src="settings.js"></script>
+
 </head>
 <body>
     <div class='container1'>
@@ -31,7 +33,7 @@
         </div>
         <div class='rows' class='row3'>
         
-            <form>   
+            <form id='form1'>   
                 <input type="text" name="firstname" placeholder="First Name" required>
                 <input type="text" name="lastname" placeholder="Last Name">
                 <input type="email" name="email" placeholder="E-Mail">
@@ -46,59 +48,62 @@
             </div>
         </div>
         <div class='rows'>
-            <form>
+            <form id='form2'>
                 <h4>Round Limits</h4>
                     <div>
-                        <label> Free Play:      <input type="radio" name="Free Play"> Yes  
-                                                <input type="radio" name="Free Play" checked>   No</label>            
+                        <label> Free Play:      <input type="radio" name="freePlay" value="yes"> Yes  
+                                                <input type="radio" name="freePlay" value="no" checked>   No</label>            
                     </div>
                     <div>
-                        <label>Time            <input type="radio" name="Time">30 Seconds</label>
-                                                <input type="radio" name="Time" checked>1 Minute</label>
-                                                <input type="radio" name="Time">3 Minutes</label>
-                                                <input type="radio" name="Time">5 Minutes</label>
-                                                <input type="radio" name="Time">No Limit</label>
+                        <label>Time            <input type="radio" name="time" value='30'>30 Seconds</label>
+                                                <input type="radio" name="time" value='60' checked>1 Minute</label>
+                                                <input type="radio" name="time" value='180'>3 Minutes</label>
+                                                <input type="radio" name="time" value='300'>5 Minutes</label>
+                                                <input type="radio" name="time" value='Infinity'>No Limit</label>
                                                 <!-- <input type="radio" name="Time">Custom Time</label> -->
                     </div>
                     <div>
-                        <label>Card Cycles      <input type="radio" name="Card Cycles">10</label>
-                                                <input type="radio" name="Card Cycles">25</label>
-                                                <input type="radio" name="Card Cycles">50</label>
-                                                <input type="radio" name="Card Cycles">100</label>
-                                                <input type="radio" name="Card Cycles" checked>No Limit</label>
+                        <label>Card Cycles      <input type="radio" name="cardCycles" value='10'>10</label>
+                                                <input type="radio" name="cardCycles" valie='25'>25</label>
+                                                <input type="radio" name="cardCycles" value='50'>50</label>
+                                                <input type="radio" name="cardCycles" value='100'>100</label>
+                                                <input type="radio" name="cardCycles" value='Infinity' checked>No Limit</label>
                                                 <!-- <input type="radio" name="Card Cycles">Custom Cycles</label> -->
                     </div>
                     <div>
-                        <label>Card Matchs      <input type="radio" name="Card Matchs">10</label>
-                                                <input type="radio" name="Card Matchs">25</label>
-                                                <input type="radio" name="Card Matchs">50</label>
-                                                <input type="radio" name="Card Matchs">100</label>
-                                                <input type="radio" name="Card Matchs" checked>No Limit</label>
+                        <label>Card Matchs      <input type="radio" name="cardMatchs" value='10'>10</label>
+                                                <input type="radio" name="cardMatchs" value='25'>25</label>
+                                                <input type="radio" name="cardMatchs" value='50'>50</label>
+                                                <input type="radio" name="cardMatchs" value='100'>100</label>
+                                                <input type="radio" name="cardMatchs" value='Infinity' checked>No Limit</label>
                                                 <!-- <input type="radio" name="Card Matchs">Custom Matchs</label> -->
                     </div>
                     <div>
                         <h4>Other Settings</h4>
                     </div>
                     <div>
-                        <label>Rematch          <input type="radio" name="Rematch">1/2</label>
-                                                <input type="radio" name="Rematch" checked>1/3</label>
-                                                <input type="radio" name="Rematch">1/4</label>
-                                                <input type="radio" name="Rematch">1/5</label>
+                        <label>Rematch          <input type="radio" name="rematch" value='2'>1/2</label>
+                                                <input type="radio" name="rematch" value='3' checked>1/3</label>
+                                                <input type="radio" name="rematch" value='4' >1/4</label>
+                                                <input type="radio" name="rematch" value='5' >1/5</label>
                     </div>
                     <div>
-                        <label>Card Deck Size   <input type="radio" name="Deck Size">3</label>
-                                                <input type="radio" name="Deck Size" checked>5</label>
-                                                <input type="radio" name="Deck Size">10</label>
-                                                <input type="radio" name="Deck Size">20</label>
+                        <label>Card Deck Size   <input type="radio" name="deckSize" value='3'>3</label>
+                                                <input type="radio" name="deckSize" value='5' checked>5</label>
+                                                <input type="radio" name="deckSize" value='10'>10</label>
+                                                <input type="radio" name="deckSize" value='20'>20</label>
                                                 <!-- <input type="radio" name="Deck Size">Custom Size</label> -->
                     </div>
                     <div>
-                        <label>Match Alert      <input type="radio" name="Alert" checked>On</label>
-                                                <input type="radio" name="Alert">Off</label>
+                        <label>Match Alert      <input type="radio" name="alert" value='on' checked>On</label>
+                                                <input type="radio" name="alert" value='off'>Off</label>
                     </div>
                     <div>
-                            <label>Sound        <input type="radio" name="Sound"checked>On</label>
-                                                <input type="radio" name="Sound">Off</label>
+                            <label>Sound        <input type="radio" name="sound" value='on' checked>On</label>
+                                                <input type="radio" name="sound" value='off'>Off</label>
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit">
                     </div>
                 
                 
