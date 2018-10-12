@@ -44,3 +44,24 @@ function playerScoreCard(scoreCard){
         </tr>`
     }
     document.getElementById('Recent Score').innerHTML =  recentcoreUpdate(currentScore)
+
+
+
+    if (cardMatches > 0) {
+        //     if (cardMatches === numCorrect) {
+        //         console.log('stop condition Card Cycles', 'score')
+        //         loop = 0
+        //         picker = 0
+        //         card = catCards[picker]['card']
+        //         numCorrect = 0
+        //         perCorrect = (numCorrect / loop)
+        //         oldCard = catCards[0]['card']
+        //         newCard = catCards[picker]['card']
+        //         time = 0
+        //         cycles = 0
+        //         document.getElementById('startButton').disabled = false;
+        //         document.getElementById('stopButton').disabled = true;
+        //         document.getElementById('yesMatch').disabled = true;
+        //         document.getElementById('noMatch').disabled = true;
+                
+        //     }
