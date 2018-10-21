@@ -7,11 +7,11 @@ To play the game go to weblink: Q1-ChrisIhler.surge.sh
 
 To play the game simply navigate to the 'Play' page and click on the 'Start' button. Then at the button of the screen click "Yes Match!" or "No Match!" if the next photo that appears matches the previous photo. When the player wants to stop simple click on the stop button and watch your percentage of correct answers show in the top of the game. 
 
-![]/Image%20Files/StartingPage.png
+![](/Image%20Files/StartingPage.png)
 
 Also on the "Settings" page you can submit user information and some extra gameplay options. 
 
-![]/Image%20Files/SettingsPage.png
+![](/Image%20Files/SettingsPage.png)
 
 
 Have fun! 
@@ -21,5 +21,7 @@ https://trello.com/b/aunYbT2X/q1-matching-game-project
 
 
 Installation
+
 Fork and clone this repository
+
 Run npm install to get all dependencies. Make sure you have nodejs already installed beforehand.

@@ -127,6 +127,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   //game ends
   document.getElementById('stopButton').addEventListener('click', function () {
     stopGameButton()
+    loop -= 1
     currentScore = (Math.round((numCorrect / loop) * 100))
     console.log(currentScore)
 
@@ -150,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     //Yes Button
     document.getElementById('yesMatch').addEventListener('click', function () {
-      console.log('Player Name', playerName1,'Card Cycles',cardCycles,'Rematch',rematch,'Card Deck Size',cardDeckSize,'Card Match Limit',cardMatch, 'loop',loop)
+      console.log('Player Name', playerName1,'Card Cycles',cardCycles,'Rematch',rematch,'Card Deck Size',cardDeckSize,'Card Match Limit',cardMatch, 'loop',loop,'correct',numCorrect)
 
       if (oldCard === newCard) {
         numCorrect += 1
@@ -223,7 +224,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     //no Button
     document.getElementById('noMatch').addEventListener('click', function () {
-      console.log('Player Name', playerName1,'Card Cycles',cardCycles,'Rematch',rematch,'Card Deck Size',cardDeckSize,'Card Match Limit',cardMatch, 'loop',loop)
+      console.log('Player Name', playerName1,'Card Cycles',cardCycles,'Rematch',rematch,'Card Deck Size',cardDeckSize,'Card Match Limit',cardMatch, 'loop',loop,'correct',numCorrect)
 
       if (oldCard !== newCard) {
         numCorrect += 1
