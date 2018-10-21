@@ -17,31 +17,37 @@ document.addEventListener("DOMContentLoaded", function (event) {
     localStorage.setItem('userInfo', JSON.stringify(userInfoObj))
     console.log(localStorage.getItem('userInfo'))
     console.log('submitted form1')
+    let userInfo = JSON.parse(localStorage.getItem('userInfo'))
+    if (userInfo !== null){document.getElementById('userinforsubmitted').innerHTML = `${userInfo['First Name']} ${userInfo['Last Name']} your information is submitted.` }
 
   })
+ 
+  let userInfo = JSON.parse(localStorage.getItem('userInfo'))
+  if (userInfo !== null){document.getElementById('userinforsubmitted').innerHTML = `${userInfo['First Name']} ${userInfo['Last Name']} your information is submitted` }
+
 
   document.getElementById('form2').addEventListener('submit', function (e) {
     e.preventDefault()
     localStorage.removeItem('gameSettings')
 
     let settingsObj = {
-      'Free Play': e.target.freePlay.value,
-      'Time': e.target.time.value,
       'Card Cycles': e.target.cardCycles.value,
       'Card Matchs': e.target.cardMatchs.value,
       'Rematch': e.target.rematch.value,
       'Card Deck Size': e.target.deckSize.value,
-      'Match Alert': e.target.alert.value,
-      'Sound': e.target.sound.value,
     }
 
     localStorage.setItem('gameSetting', JSON.stringify(settingsObj))
     console.log(localStorage.getItem('gameSetting'))
     console.log('submitted form2')
 
-
+    let gameSetting = JSON.parse(localStorage.getItem('gameSetting'))
+if (gameSetting !== null ){document.getElementById('gamesettingssubmitted').innerHTML =`Game settings are submitted.`}
 
   })
 
+  let gameSetting = JSON.parse(localStorage.getItem('gameSetting'))
+if (gameSetting !== null ){document.getElementById('gamesettingssubmitted').innerHTML =`Game settings are submitted.`}
 
 })
+

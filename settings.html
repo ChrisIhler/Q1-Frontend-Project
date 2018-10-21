@@ -12,14 +12,11 @@
 
 </head>
 
-<body>
+<body bgcolor='cadetblue'>
   <div class='container1'>
     <div class='rows'>
       <div class='row1'>
         <a href="/index.html" id='settingsButton' class='button hover active'>Play</a>
-      </div>
-      <div class='row1'>
-        <a href="/settings.html" id='settingsButton' class='button hover active'>Settings</a>
       </div>
     </div>
     <div class='rows' class='row2'>
@@ -36,6 +33,9 @@
         <input type="submit" value="Submit">
       </form>
     </div>
+    <div>
+      <h3 id='userinforsubmitted' class='rows'> </h3>
+    </div>
     <div class='rows'>
       <div class='row4'>
         <h2>Gameplay Settings</h2>
@@ -45,31 +45,17 @@
       <form id='form2'>
         <h4>Round Limits</h4>
         <div>
-          <label> Free Play: <input type="radio" name="freePlay" value="yes"> Yes
-            <input type="radio" name="freePlay" value="no" checked> No</label>
-        </div>
-        <div>
-          <label>Time <input type="radio" name="time" value='30'>30 Seconds</label>
-          <input type="radio" name="time" value='60' checked>1 Minute</label>
-          <input type="radio" name="time" value='180'>3 Minutes</label>
-          <input type="radio" name="time" value='300'>5 Minutes</label>
-          <input type="radio" name="time" value='Infinity'>No Limit</label>
-          <!-- <input type="radio" name="Time">Custom Time</label> -->
-        </div>
-        <div>
           <label>Card Cycles <input type="radio" name="cardCycles" value='10'>10</label>
           <input type="radio" name="cardCycles" valie='25'>25</label>
-          <input type="radio" name="cardCycles" value='50'>50</label>
+          <input type="radio" name="cardCycles" value='50' checked>50</label>
           <input type="radio" name="cardCycles" value='100'>100</label>
-          <input type="radio" name="cardCycles" value='Infinity' checked>No Limit</label>
           <!-- <input type="radio" name="Card Cycles">Custom Cycles</label> -->
         </div>
         <div>
           <label>Card Matchs <input type="radio" name="cardMatchs" value='10'>10</label>
           <input type="radio" name="cardMatchs" value='25'>25</label>
           <input type="radio" name="cardMatchs" value='50'>50</label>
-          <input type="radio" name="cardMatchs" value='100'>100</label>
-          <input type="radio" name="cardMatchs" value='Infinity' checked>No Limit</label>
+          <input type="radio" name="cardMatchs" value='100' checked>100</label>
           <!-- <input type="radio" name="Card Matchs">Custom Matchs</label> -->
         </div>
         <div>
@@ -89,15 +75,12 @@
           <!-- <input type="radio" name="Deck Size">Custom Size</label> -->
         </div>
         <div>
-          <label>Match Alert <input type="radio" name="alert" value='on' checked>On</label>
-          <input type="radio" name="alert" value='off'>Off</label>
-        </div>
-        <div>
-          <label>Sound <input type="radio" name="sound" value='on' checked>On</label>
-          <input type="radio" name="sound" value='off'>Off</label>
         </div>
         <div>
           <input type="submit" value="Submit">
+        </div>
+        <div>
+          <h3 id='gamesettingssubmitted' class='rows'></h3>
         </div>
 
 
